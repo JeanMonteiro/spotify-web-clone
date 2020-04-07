@@ -1,3 +1,4 @@
 export default {
-  primary : '#ff6501'
-}
+  primary: "#ff6501",
+  backgroundElevated: "#272827"
+};

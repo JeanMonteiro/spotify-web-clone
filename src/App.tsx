@@ -3,7 +3,11 @@ import GlobalStyle from "./styles/global";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import styled from "styled-components";
-import Footer from "./components/Footer";
+import Player from "./components/Player";
+import Routes from "src/routes";
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -17,14 +21,16 @@ const Content = styled.div``;
 
 function App() {
   return (
-    <Container id="containerPai">
+    <Container>
       <GlobalStyle />
-      <Footer />
-      <Sidebar />
-      <Content id="miolo">
-        <Header></Header>
-        <p>miolo</p>
-      </Content>
+      <Router>
+        <Player />
+        <Sidebar />
+        <Content>
+          <Header></Header>
+          <Routes />
+        </Content>
+      </Router>
     </Container>
   );
 }

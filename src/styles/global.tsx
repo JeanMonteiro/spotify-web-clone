@@ -57,4 +57,20 @@ export default createGlobalStyle`
     border-radius: 500px;
     border: 1px solid hsla(0,0%,100%,.6);
   }
+
+  .ball { 
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  transition-timing-function: linear;
+  transition-property: margin;
+  transition-duration: 1s;
+  margin: 0 10px 0 0;
+
+  }
+
+  .move {
+    margin: 0px 50px 0 0;
+  }
 `;
